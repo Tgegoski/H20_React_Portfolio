@@ -12,26 +12,26 @@ class App extends Component {
   };
 
   removeWorkItem = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+    // Filter this.state.work for work with an id not equal to the id being removed
+    const work = this.state.work.filter(work => work.id !== id);
+    // Set this.state.work equal to the new work array
+    this.setState({ work });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.work and render a WorkCard component for each work object
   render() {
     return (
     
-        <Title>Work List</Title>
-        {this.state.friends.map(friend => (
+        <Title>Work List</Title> 
+        {this.state.work.map(work => (
           <AboutMe
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+            removeWork={this.Work}
+            id={work.id}
+            key={work.id}
+            name={work.name}
+            image={work.image}
+            occupation={work.occupation}
+            location={work.location}
           />
         ))}
   
