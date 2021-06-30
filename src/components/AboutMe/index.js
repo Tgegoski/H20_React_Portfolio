@@ -1,7 +1,11 @@
 import React from "react";
+import AboutMe from "../components/AboutMe";
 import "./style.css";
 
-function FriendCard(props) {
+class AboutMe extends Component {
+
+  render() {
+AboutMe = this.props.AboutMe; {
   return (
     <div className="card">
       <div className="img-container">
@@ -20,11 +24,13 @@ function FriendCard(props) {
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
+      <span onClick={() => props.removeAboutMeData(props.id)} className="remove">
         𝘅
       </span>
     </div>
-  );
+)
+  
 }
-
-export default FriendCard;
+}
+}
+export default AboutMe;
