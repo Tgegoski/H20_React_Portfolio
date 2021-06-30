@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import AboutMe from "./pages/AboutMe";
-import WorkList from "./pages/WorkList";
-import ContactMe from "./pages/ContactMe";
+import AboutMe from "./components/AboutMe";
+import WorkList from "./components/WorkList";
+import ContactMe from "./components/ContactMe";
 import WorkItem from "./workItem.json";
 import Nav from "components/Nav";
 import "./App.css";
