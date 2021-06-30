@@ -32,9 +32,9 @@ const WorkList = () => {
             </WorkItem>
           ))}
         </List>
-      ) : (
+      ) : ()
 
-      )}
+      }
       <div className="mt-5">
         <Link to="home">Back to home</Link>
       </div>
